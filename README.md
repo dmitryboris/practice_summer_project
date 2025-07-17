@@ -30,26 +30,25 @@ Test:  39 акций, 231532 свечей
 
 Признак объема (Volume) логарифмируется.
 
-## Loss
+## 2. Loss
 
 Для этой задачи могут подойти MSE, MAE, Huber, MSLE или log-cosh. Был выбран Huber. По MAE и MSE будет только оцениваться результат на тестовой выборке.
 
-## Model
+## 3. Model
 
 Трансформер на основе Encoder, принимает на вход (open, high, low, close, log_volume)
 
-
-## Train
+## 4. Train
 
 ![train](https://github.com/dmitryboris/practice_summer_project/blob/main/train.png)
 
-## Test
+## 5. Test
 
 Test Loss (SmoothL1): 0.000131
 
 MAE: 3.5467, MSE: 140.8644
 
-## Test on SBER today
+## 6. Test on SBER today
 
 При использовании std/mean по всей истории Сбербанка, предсказание модели 325.38 рублей
 
