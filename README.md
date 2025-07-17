@@ -13,7 +13,9 @@
 Датасет разбит на три выборки (train/test/val)
 
 Train: 39 акций, 810957 свечей
+
 Val:   39 акций, 115689 свечей
+
 Test:  39 акций, 231532 свечей
 
 
@@ -39,15 +41,18 @@ Test:  39 акций, 231532 свечей
 
 ## Train
 
-![train](train.png)
+![train](https://github.com/dmitryboris/practice_summer_project/blob/main/train.png)
 
 ## Test
 
 Test Loss (SmoothL1): 0.000131
+
 MAE: 3.5467, MSE: 140.8644
 
 ## Test on SBER today
 
 При использовании std/mean по всей истории Сбербанка, предсказание модели 325.38 рублей
+
 При использвании std/mean свечей за 17.07, предасказание модели 325.79 рублей
+
 Настоящий close 326.00 рублей
